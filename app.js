@@ -18,7 +18,7 @@ app.use("/api/auth",ProductController)
 
 
 app.get('/',(req,res)=>{
-  res.send("Health check ok")
+  res.send("welcome to ledger-book-app")
 })
 app.listen(port, () => {
   console.log(`server running on port ${port}`);
