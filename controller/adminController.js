@@ -85,14 +85,7 @@ router.get("/AdminInfo", (req, res) => {
     });
   });
 });
-//api for getting the person with dues:
-router.get("/usersindues",(res,req)=>{
-  User.find({dues:{$gt:1500}},(err,resp)=>{
-    if(err) return res.send("server error")
-    if(!resp) return res.send("no user in debt");
-    res.send(resp)
-  });
-});
+
 
 //api for update intrests
 router.patch("/intrest", (req, res) => {
